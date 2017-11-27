@@ -50,82 +50,26 @@ To learn about ArrayLists, you're going to watch some videos on the website EdPu
 
 1. sign up for our CSA class on EdPuzzle by going to this link: https://edpuzzle.com/join/barijti 
 1. watch the 4.1 video and answer the embedded questions directly on the website as you watch the video.
-1. copy the starter code from [here]() into Processing
+1. copy the starter code from [here](https://raw.githubusercontent.com/woodstockcs/ArrayLists/master/ParticleSystem.pde) into Processing
 1. update the starter code in the same way that Shiffman updated his code in the video you just watched.
-
-use starter code
-
-1. Add a lifespan member variable to the class and assign 255 as its initial value.
-2. Decrement it in the 'update' function.
-3. Then use that lifespan variable in the same places Shiffman used it:  -- use it as the alpha value of the fill and the stroke for the display of your object (read the documentation for fill() if needed), and create a new isDead() function which returns a boolean based on whether the lifespan has dropped below 0.
-Then make the screen turn red when the Particle has died.
-You know you're done when you have a sketch that runs kind of like Shiffman's: one Particle object moving on the screen and it fades away.
-Not sure how to do all this? Rewind this video and follow along. Or if you're having trouble rewinding, you can watch it on youtube here. Still having trouble? Ask a classmate for support.
-Which class that you're written are you updating as described above?
-
-note that the Shiffman uses PVector but your starter code doesn't. It's a small difference worth mentioning, but it doesn't change anything about how your program works.
-
-watch 4.2
-- includes enhanced for loop
-
-Now update your ParticleSystem sketch in the same way Shiffman updated his sketch in the video you just watched. Your code should use an ArrayList to display 10 Particle objects flying and fading away. If you feel stuck, look at the code on the screen in the video.
-
-After that, one more step: we'll make a small update which will show an infinite display of Particle objects. To do this:
-1. in the setup() function, delete the for loop and the particles.add(...) function
-2. in the draw() function before the enhanced for loop, add this one line:  particles.add(new Particle());
-
-
-watch 4.3
-- includes backwards looping
-
-Now update your ParticleSystem sketch again in the same way Shiffman updated his in the video. Your code should use is isDead() method and a loop that runs backwards (ie. it uses i-- instead of i++) to remove elements from the ArrayList when they are no longer needed.
-
-
-watch 4.4
-
-timestamp
-question
-expected answer
-2:22
-What do we want in setup() and draw() now?
-just a reference to the particle system
-2:53
-What is the thing we're missing, that we haven't done yet in these examples?
-a ParticleSystem class
-3:27
-What is the main piece of data in the ParticleSystem class?
-an ArrayList of Particles
-3:43
-Describe the relationship between the ParticleSystem class and the Particle class.
-we have a class that describes a singular entity, and we have a class that describes a list of those singular entities.
-4:24
-What is the difference between the methods of the ParticleSystem class and the methods of the Particle class?
-The methods of the ParticleSystem class deal with all the Particles, and the methods of the Particle class deal with individual particles.
-5:15
-todo: follow along in your code from 5:15
-
-
-7:47
-OK, you should have runnable code that looks like this now.
-We're going to stop watch this video here. But Shiffman is about to go on to give some rough hints about how you might create new ParticleSystems wherever you click the mouse. OPTIONALLY, if you're interested implement this in your code after watching the rest of the tutorial here.
-
-
-
-
-end at 7:50
-
-
-
-
-
-
-
-optional: watch the rest of the video (link here) and implement the update he discusses which would create new ParticleSystems wherever you click the mouse on the canvas.
-
-
-
-quizlet:
-- data structure
-- alpha
-- primitive
+   * Add a `lifespan` member variable to the class and assign 255 as its initial value.
+   * Decrement it in the `update` function.
+   * Then use that lifespan variable in the same places Shiffman used it:  -- use it as the alpha value of the fill and the stroke for the display of your object (read the documentation for fill() if needed), and create a new isDead() function which returns a boolean based on whether the lifespan has dropped below 0.
+   * Then make the screen turn red when the Particle has died.
+   * You know you're done when you have a sketch that runs kind of like Shiffman's: one Particle object moving on the screen and it fades away.
+   * Not sure how to do all this? Rewind the video and follow along. Still having trouble? Ask a classmate for support.
+   * (Note that the Shiffman uses PVector but your starter code doesn't. It's a small difference worth mentioning, but it doesn't change anything about how your program works.)
+1. watch the 4.2 video and answer the embedded questions directly on the website as you watch the video.
+1. Now update your ParticleSystem sketch in the same way Shiffman updated his sketch in the video you just watched.
+   * Your code should use an ArrayList to display 10 Particle objects flying and fading away.
+   * If you feel stuck, look at the code on the screen in the video.
+   * Then after that, one more step: we'll make a small update which will show an infinite display of Particle objects. To do this:
+     * FIRST in the setup() function, delete the for loop and the particles.add(...) function,
+     * THEN in the draw() function before the enhanced for loop, add this one line:  particles.add(new Particle());
+1. watch the 4.3 video and answer the embedded questions directly on the website as you watch the video.
+1. Now update your ParticleSystem sketch again in the same way Shiffman updated his in the video.
+   * Your code should use is isDead() method and a loop that runs backwards (ie. it uses i-- instead of i++) to remove elements from the ArrayList when they are no longer needed.
+1. watch the 4.4 video and answer the embedded questions directly on the website as you watch the video.
+   * Note in this video one of the questions asks you to open up your code and make updates in your code directly along with Daniel Shiffman.
+1. After the updates you made in that last video, you should have a functioning sketch with a simple setup() and draw() functions just like Shiffman has in his final sketch, and you should have a ParticleSystem class and a Particle class.
 
